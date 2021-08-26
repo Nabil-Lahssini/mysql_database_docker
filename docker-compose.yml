@@ -17,6 +17,7 @@ services:
       - 3306:3306
     volumes: 
       - mysql-volume:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
     networks:
       - serv
   phpmyadmin:

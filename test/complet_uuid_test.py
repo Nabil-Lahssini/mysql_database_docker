@@ -2,7 +2,7 @@ import pytest, sys, os,pymysql, docker, os.path
 
 #mysql-connectivity-test
 def test_mysql_connectivity():
-    db = pymysql.connect(host='localhost',user='testing',passwd='toor')
+    db = pymysql.connect(host='localhost',user='root',passwd='toor')
     cursor = db.cursor()
     query = ("SHOW DATABASES")
     cursor.execute(query)
